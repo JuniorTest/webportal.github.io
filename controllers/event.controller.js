@@ -11,11 +11,12 @@ const getPagination = (page, size) => {
 
 // GET list registed user
 exports.list = async (req, res) => {
+    const eventId = req.params.id
     const { page, size } = req.query
     const { limit, offset } = getPagination(page, size)
 
     try {
-        const events = await Event.paginate({ event_id: 1 }, { offset, limit })
+        const events = await Event.paginate({ event_id: eventId }, { offset, limit })
         res.json(events)
     } catch (err) {
         console.log(err.message)
