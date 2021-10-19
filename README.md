@@ -1,11 +1,11 @@
 # webportal.github.io
 
 ##### RUN SERVER ######
-# cd webportal
-# run server: npm run server
++ cd webportal
++ run server: npm run server
 
 #### RUN CLIENT ######
-# develop in the future
++ develop in the future
 
 ####### API ########
 ### Save User in event A ###
