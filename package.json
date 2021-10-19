@@ -8,7 +8,9 @@
     "server": "nodemon server.js",
     "client": "npm start --prefix client",
     "clientinstall": "npm install --prefix client",
-    "dev": "concurrently \"npm run server\" \"npm run client\""
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "data:import": "node seeder.js",
+    "data:destroy": "node seeder.js -d"
   },
   "repository": {
     "type": "git",

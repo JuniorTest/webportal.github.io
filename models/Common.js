@@ -11,5 +11,6 @@ const db = {}
 db.mongoose = mongoose
 db.url = url
 db.events = require('./Event')(mongoose, mongoosePaginate)
+db.users = require('./User')(mongoose)
 
 module.exports = db

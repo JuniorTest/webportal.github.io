@@ -8,34 +8,7 @@ import RegisteredEvent from './components/RegisteredEvent'
 function App() {
   return (
     <div>
-      <nav className="navbar navbar-expand navbar-dark bg-dark">
-        <a href="/events" className="navbar-brand">
-          WebPortal 1
-        </a>
-        <div className="navbar-nav mr-auto">
-          <li className="nav-item">
-            <Fragment>
-              <Link to={"/events"} className="nav-link">
-                Events
-              </Link>
-            </Fragment>
-          </li>
-          <li className="nav-item">
-            <Fragment>
-              <Link to={"/register"} className="nav-link">
-                Register Event A
-              </Link>
-            </Fragment>
-          </li>
-        </div>
-      </nav>
-
-      <div className="container mt-3">
-        <Switch>
-          <Route exact path={["/", "/events"]} component={EventList} />
-          <Route exact path="/register" component={RegisteredEvent} />
-        </Switch>
-      </div>
+      <h2>Front End React</h2>
     </div>
   );
 }

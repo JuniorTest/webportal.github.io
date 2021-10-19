@@ -25,8 +25,31 @@ exports.list = async (req, res) => {
 }
 
 // POST register for Event A
-exports.registeredUser = async (req, res) => {
+exports.registeredUserEventA = async (req, res) => {
     const event_id = 1
+    const errors = validationResult(req);
+    if (!errors.isEmpty()) {
+        return res.status(400).json({ errors: errors.array() });
+    }
+
+    const { firstname, lastname, email, event_name } = req.body
+
+    try {
+        const newEventUser = new Event({
+            firstname, lastname, email, event_name, event_id
+        })
+
+        const event = await newEventUser.save()
+        res.json(event)
+    } catch (err) {
+        console.error(err.message);
+        res.status(500).send('Server Error')
+    }
+}
+
+// POST register for Event B
+exports.registeredUserEventB = async (req, res) => {
+    const event_id = 2
     const errors = validationResult(req);
     if (!errors.isEmpty()) {
         return res.status(400).json({ errors: errors.array() });
