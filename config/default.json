@@ -1,0 +1,4 @@
+{
+    "mongoURI": "mongodb+srv://sa:abc%40123@clustertest.d5evk.mongodb.net/webportal?retryWrites=true&w=majority",
+    "jwtSecret": "secret"
+}

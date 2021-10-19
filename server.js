@@ -1,12 +1,13 @@
 const express = require('express')
+const connectDB = require('./config/db')
 
 const app = express()
 
+connectDB()
+
 app.use(express.json({ extended: false }))
 
-app.use('/', (req, res) => {
-    res.send('Hello World')
-})
+app.use('/api/events', require('./routes/event.routes'))
 
 const PORT = process.env.PORT || 5000;
 
