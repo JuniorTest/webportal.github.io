@@ -1,5 +1,5 @@
 # webportal.github.io
-# Clone project: git clonde https://github.com/JuniorTest/webportal.github.io.git
++ Clone project: git clone https://github.com/JuniorTest/webportal.github.io.git
 
 ##### RUN SERVER ######
 + cd webportal
