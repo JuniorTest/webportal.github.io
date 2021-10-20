@@ -2,7 +2,8 @@
 
 ##### RUN SERVER ######
 + cd webportal
-+ run server: npm run server
++ npm install
++ run server: npm run server or npm run start
 
 #### RUN CLIENT ######
 + develop in the future
